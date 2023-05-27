@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    <title>..'TSS'..</title>
+</head>
+
+<style>
+    body{font-family:  "Lato",sans-serif;
+font-size: 15px;}
+
+nav{
+
+background-color:#333;
+border-bottom: 2px solid #fff;}
+#logo{margin-left: 20px;
+    margin-top: 3px;
+    width: 188px;}
+li{color: #000000bf;
+    padding: 14px;
+    margin-top: 0px;
+    list-style-type:none;
+  display: inline-block;  
+font-size: 24px;}
+li:hover{opacity: 2.0;}
+
+ul{float: right;}
+
+
+
+
+.mob{margin-left: 40px;
+color: blue;
+font-size: 22px;}
+
+button{
+    padding: 20px 20 px;
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: -20px 5px;
+    font-size: 20px;
+    border: 2px solid #0d6efd;
+    }
+
+button:hover{
+background-color: yellow;
+color: black;
+font-size: 24px;}
+
+
+
+
+
+ .two{border: 3px solid whitesmoke;
+border-radius: 20px;
+box-shadow: 2px 4px rgb(183, 182, 182);
+background-color: rgba(229, 226, 226, 0.604);}
+
+.slides{margin-left: 2px;}
+
+.cards{box-sizing: border-box;
+    
+display: inline-block;
+padding: 5px;
+margin: 4px;
+display: inline;
+}
+
+.cards:hover{opacity: 0.6;
+}
+
+.end{background-color: rgb(8,8,73 )  ;
+color: azure;
+margin-left: 10px;
+font-size: 20px;}
+
+.cf{border: 3px solid crimson;
+font-size: 18px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.first{background-color: #ebeb19;
+color: rgb(0, 0, 0);
+font-family: 'Times New Roman', Times, serif;
+text-align: center;
+padding: 2px;
+line-height: 4px;
+font-size: 14px;}
+.hide{display: none;}
+.cards:hover{opacity: 0.6;}
+.cards:hover+.hide{display: flex;
+color: crimson;}
+
+
+.product {display: inline-block;
+  box-shadow: 0 4px 8px  black;
+  max-width: 300px;
+  height: auto;
+  margin: 5px;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.product button {
+  border: none;
+  outline: 0;
+  margin-top: -7px;
+  padding: 5px;
+  color: white;
+  background-color: #000;
+  margin-left: 0px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.product button:hover {
+  opacity: 0.7;
+}
+
+
+.imgslider{width: 100%;
+height: 504px;
+background-image: url(plain.jpg);
+background-size: 100% 100%;
+box-shadow: box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+animation: changeimg 16s linear  infinite  ; }
+
+@keyframes changeimg{ 
+  0%{background-image: url(plain.jpg) ;}
+  25%{background-image: url(polo.jpg) ;}
+  50%{background-image: url(shirt.jpg) ;}
+  75%{background-image: url(winter.jpg) ;}
+  100%{background-image: url(plain.jpg) ;}
+}
+
+
+ul {top: 50px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {margin-left: 20px;
+  
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  border-radius: 120px;
+  background-color:transparent;
+  box-shadow: 2px 5px 10px 2px rgba(236, 221, 10, 0.897);
+  color:crimson;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  */
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: crimson;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color:transparent;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#searchbar input[type=text] {border-radius: 120px;
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;}
+  #searchbar input[type=text]:hover{background-color: #ebeb19;
+  color: #000000bf;}
+
+
+
+</style>
+<body>
+    <div class="first"><P><b>Free Shipping On All Orders |</b> Get Extra Rs.500 off on Spent of Rs.1999 Use Code:<b>GLORI500</b></P></div>
+    <div class="navbar">
+   
+    <nav>
+         <a href="ncp.html"><img id="logo" src="ABMLOGO2.png" alt="logo"></a>
+         <ul>
+          <li  class="dropdown"><a href="Men.html" class="dropbtn">MEN</a>
+           <div class="dropdown-content">
+              <a href="#">Shirt</a>
+              <a href="#">Jeans</a>
+              <a href="#">Fullsleeves</a>
+              <a href="#">Boxers</a>
+            </div></li>
+            
+            
+          <li  class="dropdown"><a href="women.html" class="dropbtn">WOMEN</a>
+           <div class="dropdown-content">
+              <a href="#">Shirts</a>
+              <a href="#">Kurtas</a>
+              <a href="#">Jeggings</a>
+              <a href="#">Crop Tops</a>
+              <a href="#">Lehangas</a>
+            </div></li>
+          
+          
+          <li class="dropdown">
+            <a href="winterwear.html" class="dropbtn">WINTER WEAR<sup style="color: red;">NEW</sup></a>
+            <div class="dropdown-content">
+              <a href="#">Hoodies</a>
+              <a href="#">Sweatshirts</a>
+              <a href="#">Jackets</a>
+            </div>
+          </li>
+          
+          <li id="searchbar"><label for="search"><input type="text" placeholder="Search your product..         🔍 " ></label></li>
+       
+       <li><a href="ABM CART.html"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="white" class="bi bi-cart-dash" viewBox="0 0 16 16">
+        <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+      </svg></a></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="white" class="bi bi-person-check" viewBox="0 0 16 16">
+        <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514ZM11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/>
+        <path d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z"/>
+      </svg></li>
+        </ul>
+        
+</nav>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="imgslider" ></div>
+  
+
+
+<p align="center" style="font-size: 60px;"><b>NEW ARRIVALS</b></p>
+
+<div class=" cards">
+<img src="new-winter-new-arrival.jpg" height="300" width="300" alt="winter">
+ 
+
+</div>
+<div class=" cards">
+<img src="active-wear-new-arrival-hi.jpg" height="300" width="300" alt="winter">
+</div>
+<div class=" cards">
+    <img src="new-arrival-fullsleeve.jpg" height="300" width="300" alt="winter">
+
+
+
+</div>
+
+<div class=" cards">
+    <img src="new-03new-arrival-shirt.jpg" height="300" width="300" alt="winter">
+</div>
+
+
+
+
+<p align="center" style="font-size: 60px;"><a href="Men.html"><b>MEN'S COLLECTION</b></a></p>
+
+<div class="product">
+    <img src="rustic_maroon_sulphur_twill_shirt_for_men_base_700x933.jpg" alt="Shirts" style="width:100%">
+    <h1>Casual Shirts</h1>
+
+    <p>All seasons casual shirts for Men</p>
+    <br>
+    <p><button>Check Out</button></p>
+  </div>
+  
+  <div class="product">
+    <img src="bold_admiral_blue_regular_fit_jeans_base_8_11_2022_700x933.jpg" alt="jeans" style="width:100%">
+    <h1>Denim Jeans</h1>
+    
+    <p>Jeans from Brands like Denim etc.</p>
+    <br>
+    <p><button>Check out</button></p>
+  </div>
+  <div class="product">
+    <img src="pista_green_pyjama_for_men_base_700x933.jpg" alt="Pyjamas" style="width:100%">
+    <h1>Pyjamas</h1>
+    
+    <p>Pyjamas for All comfort zones</p>
+    <br>
+    <p><button>Check out</button></p>
+  </div>
+  <div class="product">
+    <img src="tiger_badge_full_sleeves_t-shirt_base_700x933.jpg" alt="tShirts" style="width:100%">
+    <h1>Fullsleeves</h1>
+    
+    <p>Fullsleeves Casual Tshirts </p>
+    <br>
+    <p><button>Check out</button></p>
+  </div>
+  
+
+
+<div>
+<button   style="background-color: rgb(8, 8, 193);font-size: 25px;margin-top: 20px; margin-left: 630px;">Show more</button>
+</div>
+
+
+<p align="center" style="font-size: 60px;"><a href="women.html"><b>WOMEN'S COLLECTION</b></a></p>
+
+<div class="product">
+    <img src="block_printed_a-line_kurta_base_3_3_2022_700x933.jpg" alt="Shirts" style="width:100%">
+    <h1>Kurtas</h1>
+    
+    <p>Designer Kurtas for Women.</p>
+    <br>
+    <p><button>Check out</button></p>
+  </div>
+  
+  <div class="product">
+    <img src="dark_grey_triple_buttoned_skin_fit_women_jeggings_front_700x933.jpg" alt="Shirts" style="width:100%">
+    <h1>Jeggings</h1>
+    
+    <p>All season comfy Jeggings for Women.</p>
+    <br>
+    <p><button>Check out</button></p>
+  </div>
+  <div class="product">
+    <img src="flawless_wonder_woman_crop_top_t-shirt_base_22_2_2022_700x933.jpg" alt="Shirts" style="width:100%">
+    <h1>Crop Tops</h1>
+    
+    <p>Trendy Fashionable Crop Tops available.</p>
+    <br>
+    <p><button>Check out</button></p>
+  </div>
+  <div class="product">
+    <img src="navy_blue_striped_long_casual_shirts_for_women_base_26_2_2022_700x933.jpg" alt="Shirts" style="width:100%">
+    <h1>Shirts</h1>
+    
+    <p>Stylish casual shirts for Women.</p>
+    <br>
+    <p><button>Check out</button></p>
+  </div>
+
+<div>
+    <button   style="background-color: rgb(8, 8, 193);font-size: 25px;margin-top: 20px; margin-left: 630px;">Show more</button>
+    </div>
+
+    <p align="center" style="font-size: 60px;"><b>WINTER COLLECTION</b></p>
+
+    <div class="product">
+        <img src="bella_ciao_sweatshirt_for_men_base_7_1_2022_700x933.jpg" alt="Shirts" style="width:100%">
+        <h1>Sweatshirts</h1>
+        
+        <p>Sweatshirts from Popular Merchandises.</p>
+        <br>
+        <p><button>Check out</button></p>
+      </div>
+      
+      <div class="product">
+        <img src="plain_burgundy_hoodies_for_men_base_7_1_2022_700x933.jpg" alt="Shirts" style="width:100%">
+        <h1>Hoodies</h1>
+        
+        <p>100% pure cotton Stylish Hoodies for men</p>
+        <br>
+        <p><button>Check out</button></p>
+      </div>
+      <div class="product">
+        <img src="plain_bottle_green_hoodies_women_base_700x933.jpg" alt="Shirts" style="width:100%">
+        <h1>Women Sweaters</h1>
+        
+        <p>All types of sweaters hoodies for women</p>
+        <br>
+        <p><button>Check out</button></p>
+      </div>
+      <div class="product">
+        <img src="bold_black_solid_bomber_jacket_men_base_700x933.jpg" alt="Shirts" style="width:100%">
+        <h1>Jackets</h1>
+        
+        <p>All seasons casual/partywear.winter wear  Unisex jackets.</p>
+        <br>
+        <p><button>Check out</button></p>
+      </div>
+
+
+
+
+
+<br>
+<div class="cf">
+    <form action="Contact form">
+
+<label for="Fname">Your Name</label>
+<br>
+<input type="text" id="fname" name="Your name">
+<br>
+<label for="Email">E-mail</label>
+<br>
+<input type="text" id="Email" name="E-mail">
+<br>
+<label for="Contact">Contact</label>
+<br>
+<input type="number" id="Contact" name="Contact">
+<br>
+<label for="Message">Message</label>
+<br><input type="text" id="Message" name="Message">
+<br>
+
+<button id="button1" style="margin-left:640px ; margin-top:20px; background-color: green;">Send</button>
+
+
+
+
+
+
+
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+<br>
+<div class="end" >
+<table style="width:100% ;background-color: rgb(8, 8, 73);color: azure; padding: 60px;font-size: 20px;">
+   <tr> 
+    <td>+91-7701832618</td>
+    <td>Privacy Policy</td>
+    <td>Facebook</td>
+    
+   </tr>
+   <tr> 
+    <td>glorioustourandtravels</td>
+    <td>About us</td>
+    <td>Instagram</td>
+    
+   </tr>
+   <tr> 
+    <td></td>
+    <td>Contact us</td>
+    <td>Twitter</td>
+    
+  
+</table>
+<hr>
+<p>Copyright| All rights Reserved.</p>
+
+</div>
+</body>
+</html>
